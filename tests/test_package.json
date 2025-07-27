@@ -1,0 +1,16 @@
+[
+{
+    "name": "test_instance_1",
+    "epoch": 0,
+    "version": "1.0.0",
+    "release": "alt1",
+    "arch": "x86_64"
+},
+{
+    "name": "test_instance_2",
+    "epoch": 0,
+    "version": "2.0.0",
+    "release": "alt1",
+    "arch": "x86_64"
+}
+]
