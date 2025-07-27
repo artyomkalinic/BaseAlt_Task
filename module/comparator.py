@@ -1,8 +1,10 @@
 from rpm_vercmp import vercmp
-from module.packages import PackagesByBranch, BRANCH_1, BRANCH_2
+from module.packages import PackagesByBranch
 
 class Comparator():
-    def __init__(self, branch1: PackagesByBranch, branch2: PackagesByBranch):
+    def __init__(self, branch_name_1: str, branch_name_2: str, branch1: PackagesByBranch, branch2: PackagesByBranch):
+        self.branch_name_1 = branch_name_1
+        self.branch_name_2 = branch_name_2
         self.branch1 = branch1
         self.branch2 = branch2
     
@@ -36,9 +38,9 @@ class Comparator():
                         newer_in_1.append(pkg_1.__repr__())
 
             res[arch] = {
-                f"only_in_{BRANCH_1}": only_in_1,
-                f"only_in_{BRANCH_2}": only_in_2,
-                f"newer_in_{BRANCH_1}": newer_in_1
+                f"only_in_{self.branch_name_1}": only_in_1,
+                f"only_in_{self.branch_name_2}": only_in_2,
+                f"newer_in_{self.branch_name_1}": newer_in_1
             }
 
         return res

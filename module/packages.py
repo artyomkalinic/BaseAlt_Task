@@ -1,10 +1,6 @@
 from collections import defaultdict
 import rpm
 
-BRANCH_1 = "sisyphus"
-BRANCH_2 = "p11"
-
-
 class Package():
     def __init__(self, name, epoch, version, release, arch):
         self.name = name
@@ -21,6 +17,7 @@ class Package():
 
 
 class PackagesByBranch():
+
     def __init__(self, branch_packages):
         self.packages = defaultdict(dict)
         for pack in branch_packages:
