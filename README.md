@@ -2,7 +2,7 @@
 
 ## What It Does
 
-This tool gets packages from the branches `"sisyphus"` and `"p11"`, classifies them by architechture, and checks which branch each package belongs to. If a package belongs to both branches, it is compared by version. If the version in `"sisyphus"` is newer, it is added to the `"newer_in_sisyphus"` section. All results are saved in `"result.json"` and are available for viewing. 
+This tool gets packages from the branches `sisyphus` and `p11`, classifies them by architechture, and checks which branch each package belongs to. If a package belongs to both branches, it is compared by version. If the version in `sisyphus` is newer, it is added to the `newer_in_sisyphus` section. All results are saved in `result.json` and are available for viewing. 
 
 ## How to Run
 
