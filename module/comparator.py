@@ -11,7 +11,9 @@ class Comparator():
     def compare(self):
         res = {}
 
-        for arch in self.branch1.packages:
+        all_arches = set(self.branch1.packages.keys()) | set(self.branch2.packages.keys())
+
+        for arch in all_arches:
             branch1_pkgs = self.branch1.packages.get(arch, {})
             branch2_pkgs = self.branch2.packages.get(arch, {})
 
