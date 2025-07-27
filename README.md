@@ -21,3 +21,6 @@ sudo apt-get install -y python3-module-rpm
 sudo apt-get install -y python3-module-pip
 ```
 and use `python3 cli.py --branch1 branch_name_1 --branch2 branch_name_2 result.json` with all the available branches you have. 
+
+## Tested On
+This tool was tested on `ALT Linux 11.0 Workstation (x86_64)`
