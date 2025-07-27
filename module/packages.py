@@ -1,5 +1,4 @@
 from collections import defaultdict
-import rpm
 
 class Package():
     def __init__(self, name, epoch, version, release, arch):
